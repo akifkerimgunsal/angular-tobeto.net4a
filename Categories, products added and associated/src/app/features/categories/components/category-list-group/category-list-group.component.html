@@ -1,0 +1,11 @@
+<!-- <ul>
+  @for (item of categoryList; track $index) {
+    <li>
+      {{ item.name }}
+    </li>
+  }
+</ul> -->
+<app-list-group
+  [items]="categoryListGroupItems"
+  (changeSelect)="onChangeSelect($event)"
+></app-list-group>
